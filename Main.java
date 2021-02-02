@@ -9,7 +9,9 @@ class Main {
 
     if (yes)
     {
-
+      System.out.println(pun(name));
+    }else{
+      System.out.println(okay(name));
     }
   }
 
@@ -23,6 +25,15 @@ class Main {
   //Fact method
   static int fact()
   {
-    
+    String answer = "Open-Toad!!!";
+    return answer;
+  }
+
+
+  //Okay method
+  static int okay(String name)
+  {
+    String bye = "Okay, have a good day!";
+    return bye;
   }
 }
