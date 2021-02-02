@@ -6,7 +6,7 @@ class Main {
 
     System.out.println("Hello, want to hear a joke?");
     String name = scan.next();
-    
+
     if (yes)
     {
       System.out.println(pun(name));
@@ -23,7 +23,7 @@ class Main {
   }
 
   //Fact method
-  static int fact()
+  static String fact()
   {
     String answer = "Open-Toad!!!";
     return answer;
