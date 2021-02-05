@@ -17,7 +17,10 @@ class Main {
   
     int result = newNumber(newNum);
     System.out.println("Your new result " + result);
-  }
+
+
+      System.out.println(thx());
+    }
 
   //Multi method
   static int multi(int num, int multiNum)
@@ -28,7 +31,13 @@ class Main {
   //New number method
   static int newNumber(int newNum)
   {
-    int result = 3 * newNum;
+    int result = 2 * newNum;
     return result;
+  }
+ //Thank you method
+  static String thx()
+  {
+    String thankYou = "Your numbers are divisable by 2";
+    return thankYou;
   }
 }
