@@ -12,13 +12,11 @@ class Main {
     int product = multi(num, multiNum);
     System.out.println("Your new number is " + product);
 
-    System.out.println("Would yu like to add another number");
-    boolean newNum = scan.nextBoolean();
-  if(true)
-    {
+    System.out.println("Enter another number");
+    int newNum = scan.nextInt();
+  
     int result = newNumber(newNum);
     System.out.println("Your new result " + result);
-    }
   }
 
   //Multi method
@@ -30,7 +28,7 @@ class Main {
   //New number method
   static int newNumber(int newNum)
   {
-    int result = product * newNum;
+    int result = 3 * newNum;
     return result;
   }
 }
