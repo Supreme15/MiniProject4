@@ -2,38 +2,35 @@ import java.util.Scanner;
 
 class Main {
   public static void main(String[] args) {
-    Scanner scan = new Scanner.next(System.in);
+    Scanner scan = new Scanner(System.in);
 
-    System.out.println("Hello, want to hear a joke?");
-    String name = scan.next();
+    System.out.println("Type in number");
+    int num = scan.nextInt();
+    System.out.println("Num multiplied by:");
+    int multiNum = scan.nextInt();
+    
+    int product = multi(num, multiNum);
+    System.out.println("Your new number is " + product);
 
-    if (yes)
+    System.out.println("Would yu like to add another number");
+    boolean newNum = scan.nextBoolean();
+  if(true)
     {
-      System.out.println(pun(name));
-    }else{
-      System.out.println(okay(name));
+    int result = newNumber(newNum);
+    System.out.println("Your new result " + result);
     }
   }
 
-  //Pun method
-  static String pun(String name)
+  //Multi method
+  static int multi(int num, int multiNum)
   {
-    String joke = "What type of sandals do frogs wear?";
-    return joke;
+    int product = num * multiNum;
+    return product;
   }
-
-  //Fact method
-  static String fact()
+  //New number method
+  static int newNumber(int newNum)
   {
-    String answer = "Open-Toad!!!";
-    return answer;
-  }
-
-
-  //Okay method
-  static int okay(String name)
-  {
-    String bye = "Okay, have a good day!";
-    return bye;
+    int result = product * newNum;
+    return result;
   }
 }
